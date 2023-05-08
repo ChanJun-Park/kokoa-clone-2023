@@ -19,3 +19,16 @@
   display: block;
   padding: 12px;
 }
+
+@keyframes rotateCogAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCogAnimation 1s linear infinite;
+}
